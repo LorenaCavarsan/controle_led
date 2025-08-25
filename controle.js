@@ -58,6 +58,7 @@ function setUi(connected) {
   document.getElementById('btnOff').disabled       = !connected;
   document.getElementById('btnDisconnect').disabled= !connected;
   document.getElementById('btnConnect').disabled   = connected;
+  document.getElementById('btnpiscar').disabled = !connected;
 }
 
 function setStatus(t) { 
@@ -69,6 +70,8 @@ document.getElementById('btnConnect').addEventListener('click', connect);
 document.getElementById('btnDisconnect').addEventListener('click', disconnect);
 document.getElementById('btnOn').addEventListener('click', () => send('1'));
 document.getElementById('btnOff').addEventListener('click', () => send('0'));
+document.getElementById('btnpiscar').addEventListener('click', () => send('2'));
 
 // Libera a porta ao fechar a aba
 window.addEventListener('beforeunload', async () => { await cleanup(); });
+
