@@ -1,0 +1,32 @@
+body { 
+    background-color: pink;
+    font-family: Arial, sans-serif; 
+    margin: 24px; 
+}
+
+h1 {
+    color: palevioletred;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.botao {
+    margin-left: 380px;
+}
+
+button { 
+    background-color: palevioletred;
+    color: white;
+    border-color: purple;
+    padding: 10px 18px; 
+    margin: 6px 8px 6px 0; 
+    font-size: 16px;
+}
+
+#status { 
+    color: palevioletred;
+    margin-top: 12px; 
+    text-align: center;
+    font-weight: bold; 
+}
+
